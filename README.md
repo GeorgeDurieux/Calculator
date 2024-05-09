@@ -1,4 +1,4 @@
-CALCULATOR
+**CALCULATOR**
 
 Welcome to the Calculator app! This is a simple calculator tool with basic arithmetic operations.
 
@@ -10,12 +10,12 @@ FEATURES
 
 HOW TO USE:
 
-1. Input Numbers: Click on the number buttons to input digits.<br />
-2. Select Operation: Click on the operation buttons to select the desired operation (+, -, *, /).<br />
-3. Calculate: Click on the equal (=) button to perform the calculation.<br />
-4. Clear: Click on the AC button to clear the current calculation.<br />
-5. Delete: Click on the DEL button to delete the last digit entered.<br />
-6. Mode Toggle: Click on the "LIGHT MODE" or "DARK MODE" button to switch between light and dark mode.
+1. **Input Numbers:** Click on the number buttons to input digits.<br />
+2. **Select Operation:** Click on the operation buttons to select the desired operation (+, -, *, /).<br />
+3. **Calculate:** Click on the equal (=) button to perform the calculation.<br />
+4. **Clear:** Click on the AC button to clear the current calculation.<br />
+5. **Delete:** Click on the DEL button to delete the last digit entered.<br />
+6. **Mode Toggle:** Click on the "LIGHT MODE" or "DARK MODE" button to switch between light and dark mode.
 
 HOW TO RUN LOCALLY:
 
