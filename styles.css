@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'digital-7';
+  src: url('fonts/digital-7.regular-webfont.woff2') format('woff2'),
+       url('./fonts/digital-7.regular-webfont.woff') format('woff')
+}
+
+:root {
+  --light-opaque: hsl(0, 0%, 100%, 0.9);
+  --light-transparent: hsla(0, 0%, 100%, 0.7);
+  --dark-opaque: hsla(0, 0%, 0%, 0.9);
+  --dark-transparent: hsla(0, 0%, 0%, 0.7);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'digital-7', Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(hsl(175, 100%, 50%), hsl(240, 100%, 25%));  
+}
+
+body.dark-mode {
+  background: radial-gradient(hsl(0, 0%, 50%), hsl(0, 0%, 0%));
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  max-width: 400px;
+  margin-bottom: 100px;
+  font-family: 'digital-7';
+}
+
+#screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: var(--dark-transparent);
+  min-height: 120px;
+  width: 100%;
+  min-width: 400px;
+  padding: 15px;
+}
+
+#screen.dark-mode {
+  background-color: var(--dark-opaque);
+}
+
+#previous-operand-text {
+  color: var(--light-transparent);
+  font-size: 2rem;
+}
+
+#current-operand-text {
+  color: var(--light-opaque);
+  font-size: 3rem;
+}
+
+#button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  width: 100%;
+  min-width: 400px;
+}
+
+.button {
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--light-opaque);
+  background-color: var(--light-transparent);
+  color: var(--dark-opaque);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.button.dark-mode {
+  border: 1px solid var(--dark-opaque);
+  background-color: var(--dark-transparent);
+  color: var(--light-opaque);
+}
+
+.button:hover {
+  background-color: var(--light-opaque);
+}
+
+.button.dark-mode:hover {
+  background-color: var(--dark-opaque);
+}
+
+.button.span-two {
+  aspect-ratio: auto;
+  grid-column: span 2;
+}
+
+#mode-button {
+  font-size: 1.5rem;
+  padding: 10px;
+  bottom: 0px;
+  width: 100%;
+  min-width: 400px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--light-transparent);
+}
+
+#mode-button:hover {
+  background-color: var(--light-opaque);
+}
+
+#mode-button.dark-mode {
+  background-color: var(--dark-transparent);
+  color: var(--light-opaque);
+}
+
+#mode-button.dark-mode:hover {
+  background-color: var(--dark-opaque);
+}
+
+@media only screen and (max-width: 600px) {
+  #calculator {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  
+  #screen {
+    min-height: 80px;
+    padding: 10px;
+    width: 100%;
+    min-width: 300px;
+  }
+
+  #previous-operand-text {
+    font-size: 1.25rem;
+  }
+  
+  #current-operand-text {
+    font-size: 2rem;
+  }
+  
+  #button-grid {
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+  }
+  
+  .button {
+    font-size: 1.25rem;
+  }
+
+  #mode-button {
+    font-size: 1rem;
+    min-width: 300px;
+  }
+}

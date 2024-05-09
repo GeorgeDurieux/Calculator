@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js" type="module"></script>
+  <title>Calculator</title>
+</head>
+<body>
+  <main id="calculator">
+    <div id="screen">
+      <div data-previous-operand-text id="previous-operand-text"></div>
+      <div data-current-operand-text id="current-operand-text"></div>
+    </div>
+    <div id="button-grid">
+      <button data-all-clear class="button span-two">AC</button>
+      <button data-delete class="button">DEL</button>
+      <button data-operation class="button">*</button>
+      <button data-number class="button">7</button>
+      <button data-number class="button">8</button>
+      <button data-number class="button">9</button>
+      <button data-operation class="button">÷</button>
+      <button data-number class="button">4</button>
+      <button data-number class="button">5</button>
+      <button data-number class="button">6</button>
+      <button data-operation class="button">+</button>
+      <button data-number class="button">1</button>
+      <button data-number class="button">2</button>
+      <button data-number class="button">3</button>
+      <button data-operation class="button">-</button>
+      <button data-number class="button">.</button>
+      <button data-number class="button">0</button>
+      <button data-equal class="button span-two">=</button>
+    </div>
+    <button id="mode-button" data-mode-button>LIGHT MODE</button>
+  </main>
+</body>
+</html>
